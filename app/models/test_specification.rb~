@@ -1,0 +1,2 @@
+class TestSpecification < ActiveRecord::Base
+end

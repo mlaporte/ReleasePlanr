@@ -1,0 +1,65 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Product:</b>
+  <%= @requirement.product_id %>
+</p>
+
+<p>
+  <b>Release:</b>
+  <%= @requirement.release_id %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @requirement.user_id %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @requirement.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @requirement.description %>
+</p>
+
+<p>
+  <b>Details:</b>
+  <%= @requirement.details %>
+</p>
+
+<p>
+  <b>Category:</b>
+  <%= @requirement.category %>
+</p>
+
+<p>
+  <b>Importance:</b>
+  <%= @requirement.importance %>
+</p>
+
+<p>
+  <b>Complexity:</b>
+  <%= @requirement.complexity %>
+</p>
+
+<p>
+  <b>Duration:</b>
+  <%= @requirement.duration %>
+</p>
+
+<p>
+  <b>Version:</b>
+  <%= @requirement.version %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%= @requirement.status %>
+</p>
+
+
+<%= link_to 'Edit', edit_requirement_path(@requirement) %> |
+<%= link_to 'Back', requirements_path %>

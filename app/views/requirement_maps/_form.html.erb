@@ -1,0 +1,25 @@
+<%= form_for(@requirement_map) do |f| %>
+  <% if @requirement_map.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@requirement_map.errors.count, "error") %> prohibited this requirement_map from being saved:</h2>
+
+      <ul>
+      <% @requirement_map.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :requirement_id %><br />
+    <%= f.text_field :requirement_id %>
+  </div>
+  <div class="field">
+    <%= f.label :test_case_id %><br />
+    <%= f.text_field :test_case_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

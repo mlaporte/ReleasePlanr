@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Requirement:</b>
+  <%= @requirement_map.requirement_id %>
+</p>
+
+<p>
+  <b>Test case:</b>
+  <%= @requirement_map.test_case_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_requirement_map_path(@requirement_map) %> |
+<%= link_to 'Back', requirement_maps_path %>

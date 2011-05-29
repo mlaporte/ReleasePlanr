@@ -1,0 +1,33 @@
+<h1>Listing releases</h1>
+
+<table>
+  <tr>
+    <th>Product</th>
+    <th>Name</th>
+    <th>Details</th>
+    <th>Position</th>
+    <th>Project</th>
+    <th>Is completed</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @releases.each do |release| %>
+  <tr>
+    <td><%= release.product_id %></td>
+    <td><%= release.name %></td>
+    <td><%= release.details %></td>
+    <td><%= release.position %></td>
+    <td><%= release.project_id %></td>
+    <td><%= release.is_completed %></td>
+    <td><%= link_to 'Show', release %></td>
+    <td><%= link_to 'Edit', edit_release_path(release) %></td>
+    <td><%= link_to 'Destroy', release, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Release', new_release_path %>

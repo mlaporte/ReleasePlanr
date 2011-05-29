@@ -1,0 +1,45 @@
+<h1>Listing requirements</h1>
+
+<table>
+  <tr>
+    <th>Product</th>
+    <th>Release</th>
+    <th>User</th>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Details</th>
+    <th>Category</th>
+    <th>Importance</th>
+    <th>Complexity</th>
+    <th>Duration</th>
+    <th>Version</th>
+    <th>Status</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @requirements.each do |requirement| %>
+  <tr>
+    <td><%= requirement.product_id %></td>
+    <td><%= requirement.release_id %></td>
+    <td><%= requirement.user_id %></td>
+    <td><%= requirement.name %></td>
+    <td><%= requirement.description %></td>
+    <td><%= requirement.details %></td>
+    <td><%= requirement.category %></td>
+    <td><%= requirement.importance %></td>
+    <td><%= requirement.complexity %></td>
+    <td><%= requirement.duration %></td>
+    <td><%= requirement.version %></td>
+    <td><%= requirement.status %></td>
+    <td><%= link_to 'Show', requirement %></td>
+    <td><%= link_to 'Edit', edit_requirement_path(requirement) %></td>
+    <td><%= link_to 'Destroy', requirement, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Requirement', new_requirement_path %>

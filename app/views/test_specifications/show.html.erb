@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Product:</b>
+  <%= @test_specification.product_id %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @test_specification.user_id %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @test_specification.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @test_specification.description %>
+</p>
+
+<p>
+  <b>Version:</b>
+  <%= @test_specification.version %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%= @test_specification.status %>
+</p>
+
+
+<%= link_to 'Edit', edit_test_specification_path(@test_specification) %> |
+<%= link_to 'Back', test_specifications_path %>

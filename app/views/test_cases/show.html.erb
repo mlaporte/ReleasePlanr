@@ -1,0 +1,60 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Test specification:</b>
+  <%= @test_case.test_specification_id %>
+</p>
+
+<p>
+  <b>Parent:</b>
+  <%= @test_case.parent_id %>
+</p>
+
+<p>
+  <b>Is parent:</b>
+  <%= @test_case.is_parent %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @test_case.user_id %>
+</p>
+
+<p>
+  <b>Number:</b>
+  <%= @test_case.number %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @test_case.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @test_case.description %>
+</p>
+
+<p>
+  <b>Setup:</b>
+  <%= @test_case.setup %>
+</p>
+
+<p>
+  <b>Procedure:</b>
+  <%= @test_case.procedure %>
+</p>
+
+<p>
+  <b>Duration:</b>
+  <%= @test_case.duration %>
+</p>
+
+<p>
+  <b>Last run entry:</b>
+  <%= @test_case.last_run_entry_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_test_case_path(@test_case) %> |
+<%= link_to 'Back', test_cases_path %>

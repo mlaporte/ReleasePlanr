@@ -1,0 +1,55 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Product:</b>
+  <%= @build.product_id %>
+</p>
+
+<p>
+  <b>Release:</b>
+  <%= @build.release_id %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @build.user_id %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @build.name %>
+</p>
+
+<p>
+  <b>Build date:</b>
+  <%= @build.build_date %>
+</p>
+
+<p>
+  <b>Prerelease date:</b>
+  <%= @build.prerelease_date %>
+</p>
+
+<p>
+  <b>Release date:</b>
+  <%= @build.release_date %>
+</p>
+
+<p>
+  <b>Details:</b>
+  <%= @build.details %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%= @build.status %>
+</p>
+
+<p>
+  <b>Notes:</b>
+  <%= @build.notes %>
+</p>
+
+
+<%= link_to 'Edit', edit_build_path(@build) %> |
+<%= link_to 'Back', builds_path %>

@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Build:</b>
+  <%= @test_plan.build_id %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @test_plan.user_id %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @test_plan.description %>
+</p>
+
+<p>
+  <b>Start date:</b>
+  <%= @test_plan.start_date %>
+</p>
+
+<p>
+  <b>End date:</b>
+  <%= @test_plan.end_date %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%= @test_plan.status %>
+</p>
+
+
+<%= link_to 'Edit', edit_test_plan_path(@test_plan) %> |
+<%= link_to 'Back', test_plans_path %>

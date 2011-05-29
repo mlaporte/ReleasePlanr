@@ -1,0 +1,35 @@
+<h1>Listing test_case_entries</h1>
+
+<table>
+  <tr>
+    <th>Test plan</th>
+    <th>Test case</th>
+    <th>User</th>
+    <th>Start date</th>
+    <th>End date</th>
+    <th>Status</th>
+    <th>Notes</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @test_case_entries.each do |test_case_entry| %>
+  <tr>
+    <td><%= test_case_entry.test_plan_id %></td>
+    <td><%= test_case_entry.test_case_id %></td>
+    <td><%= test_case_entry.user_id %></td>
+    <td><%= test_case_entry.start_date %></td>
+    <td><%= test_case_entry.end_date %></td>
+    <td><%= test_case_entry.status %></td>
+    <td><%= test_case_entry.notes %></td>
+    <td><%= link_to 'Show', test_case_entry %></td>
+    <td><%= link_to 'Edit', edit_test_case_entry_path(test_case_entry) %></td>
+    <td><%= link_to 'Destroy', test_case_entry, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Test case entry', new_test_case_entry_path %>

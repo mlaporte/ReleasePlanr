@@ -1,0 +1,41 @@
+<h1>Listing builds</h1>
+
+<table>
+  <tr>
+    <th>Product</th>
+    <th>Release</th>
+    <th>User</th>
+    <th>Name</th>
+    <th>Build date</th>
+    <th>Prerelease date</th>
+    <th>Release date</th>
+    <th>Details</th>
+    <th>Status</th>
+    <th>Notes</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @builds.each do |build| %>
+  <tr>
+    <td><%= build.product_id %></td>
+    <td><%= build.release_id %></td>
+    <td><%= build.user_id %></td>
+    <td><%= build.name %></td>
+    <td><%= build.build_date %></td>
+    <td><%= build.prerelease_date %></td>
+    <td><%= build.release_date %></td>
+    <td><%= build.details %></td>
+    <td><%= build.status %></td>
+    <td><%= build.notes %></td>
+    <td><%= link_to 'Show', build %></td>
+    <td><%= link_to 'Edit', edit_build_path(build) %></td>
+    <td><%= link_to 'Destroy', build, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Build', new_build_path %>

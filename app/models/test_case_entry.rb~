@@ -1,0 +1,2 @@
+class TestCaseEntry < ActiveRecord::Base
+end

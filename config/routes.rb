@@ -1,4 +1,24 @@
 ReleasePlanr::Application.routes.draw do
+  resources :test_case_entries
+
+  resources :test_plans
+
+  resources :requirement_maps
+
+  resources :test_cases
+
+  resources :test_specifications
+
+  resources :builds
+
+  resources :requirements
+
+  resources :releases
+
+  resources :users
+
+  resources :products
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
